@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  ros2:
+    image: ros2-ubuntu22.04
+    container_name: ros2-container
+    volumes:
+      - ~/ros2_ws:/root/ros2_ws
+    stdin_open: true
+    tty: true
