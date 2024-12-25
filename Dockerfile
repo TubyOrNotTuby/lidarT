@@ -33,7 +33,7 @@ RUN curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key | a
 
 # Install ROS 2
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    ros-${ROS_DISTRO}-desktop && \
+    ros-${humble}-desktop && \
     rm -rf /var/lib/apt/lists/*
 
 # Initialize rosdep
